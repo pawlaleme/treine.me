@@ -1,0 +1,157 @@
+body{
+  margin: 0; /*espaço para fora do preenchimento interno*/
+  font-family: "Open Sans", sans-serif;
+
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(162, 224, 209, 0.38) 100%);
+  min-height: 100vh; 
+}
+
+.page{
+    width: 1000px;    
+    margin: 0 auto; /*cima - lados - baixo*/
+    padding-top: 65px;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+    margin: 0;
+    padding: 0;
+
+}
+/*pseudo class*/
+ul li a:hover{ 
+  font-weight: bold;
+  opacity: 1;
+
+}
+
+a {
+    text-decoration: none;
+    color: #1F1534;
+}
+
+ul li a{
+    opacity: 0.5;
+}
+
+
+h1, ul {
+    font-family: "Mulish", sans-serif;
+
+}
+
+h1 {
+  font-size: 49px;
+  line-height: 56px;
+  color: #1F1534;
+  font-weight: normal;
+  width: 490px;
+}
+
+h1 span {
+    color: #89C5CC;
+    font-weight: bold;
+}
+
+section p{
+ font-size: 14px;
+ line-height: 28px;
+ color: #7D7987;
+ font-family: "Open Sans", sans-serif;
+ margin: 40px 0;
+}
+
+button:hover {
+    background-color: #397962;
+}
+
+button {
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+   
+    border-radius: 4px;
+    border: 0;
+    padding: 14px 32px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    color: white;
+    background-color: #69B99D;
+    gap: 10px;
+    cursor: pointer;
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer {
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 80px;
+
+}
+
+footer a {
+    font-weight: bold;
+}
+
+
+#balls{ 
+   position: fixed;
+   bottom: 0;
+   right: 0;
+
+}
+
+/* Estilos específicos para telas menores */
+@media (max-width: 767px) {
+    .page {
+        width: 90%; /* para ocupar 90% da largura da tela */
+    }
+
+    nav {
+        flex-direction: column; /* Empilhar itens na vertical */
+        align-items: center; /* Centralizar itens */
+        margin-bottom: 30px; /* Reduzir a margem inferior */
+    }
+
+    ul {
+        flex-direction: column; /* Empilhar itens na vertical */
+        gap: 24px; /* Reduzir o espaçamento entre os itens */
+    }
+
+    h1 {
+        font-size: 36px; /* Reduzir o tamanho da fonte */
+        line-height: 42px; /* Ajustar a altura da linha */
+        width: auto; /* Permitir que o texto se ajuste dinamicamente */
+    }
+
+    section p {
+        font-size: 12px; /* Reduzir o tamanho da fonte */
+        line-height: 24px; /* Ajustar a altura da linha */
+        margin: 20px 0; /* Reduzir a margem */
+    }
+
+    button {
+        padding: 12px 24px 13px; /* Ajustar o preenchimento */
+    }
+}
